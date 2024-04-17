@@ -21,13 +21,13 @@ PHPとその他の関連技術を用いてアプリケーションを作成す�
 
 普段PJで使うようなタスク管理アプリケーションの作成を通して、[CRUD](https://developer.mozilla.org/ja/docs/Glossary/CRUD) の実装を経験します。
 
-- [要件](docs/タスク管理システム.md)
+- [要件](docs/taskApplication.md)
 
 ### B. 問い合わせ管理システム
 
 問い合わせを受けるユーザ側と、問い合わせを管理する管理者側の2機能の連携から成り立つアプリケーションを作成します。
 
-- [要件](docs/問い合わせ管理システム.md)
+- [要件](docs/contactApplication.md)
 
 ## 留意事項
 
