@@ -2,7 +2,10 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.3",
@@ -44,6 +47,14 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+            "@php artisan migrate --graceful --ansi"
+        ],
+        "provision": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php composer install --no-interaction --no-suggest --prefer-dist",
+            "@php artisan key:generate --ansi"
+        ],
+        "migrate": [
             "@php artisan migrate --graceful --ansi"
         ]
     },
