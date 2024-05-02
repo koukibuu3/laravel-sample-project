@@ -41,3 +41,25 @@ PHPとその他の関連技術を用いてアプリケーションを作成す�
     - 要件はいかようにも解釈できるよう雑に書いているので好きに解釈してください
 - 無理はしないこと
     - プロジェクトの作業、および自分の睡眠時間は犠牲にしないでください
+
+## 始め方
+
+### 方法1: このリポジトリをcloneして始める
+
+```sh
+# リポジトリをclone
+git clone https://github.com/koukibuu3/laravel-sample-project.git
+
+# 初期スクリプトを実行
+composer provision
+
+# コンテナを立ち上げる
+docker-compose up -d # もしくは ./vendor/bin/sail up -d
+
+# テーブルを作成する
+docker-compose exec laravel.test composer migrate
+```
+
+### 方法2: Laravel公式ドキュメントを参考に始める
+
+https://laravel.com/docs/11.x
